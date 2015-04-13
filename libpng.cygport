@@ -1,5 +1,5 @@
 NAME="libpng"
-VERSION=1.6.16
+VERSION=1.6.17
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="PNG library"
@@ -9,14 +9,13 @@ HOMEPAGE="http://libpng.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libpng/libpng-${VERSION}.tar.xz"
 SRC_DIR="libpng-${VERSION}"
 
-PKG_NAMES="libpng16 libpng16-devel libpng-devel libpng-doc libpng-tools"
-libpng16_REQUIRES="libpng-doc"
-libpng16_CONTENTS="usr/bin/cygpng16-16.dll"
+PKG_NAMES="libpng16 libpng16-devel libpng-devel libpng-tools"
+libpng16_OBSOLETES="libpng-doc"
+libpng16_CONTENTS="usr/bin/cygpng16-16.dll usr/share/doc/"
 libpng16_devel_CONTENTS="usr/bin/libpng16-config usr/include/libpng16/
 	usr/lib/libpng16.* usr/lib/pkgconfig/libpng16.pc"
 libpng_devel_REQUIRES="libpng16-devel"
 libpng_devel_CONTENTS="usr/bin/libpng-config usr/include/*.h
-	usr/lib/libpng.* usr/lib/pkgconfig/libpng.pc usr/share/man/man3/"
-libpng_doc_CONTENTS="usr/share/doc/ usr/share/man/man5/"
+	usr/lib/libpng.* usr/lib/pkgconfig/libpng.pc usr/share/man/man[35]/"
 libpng_tools_CATEGORY="Graphics"
 libpng_tools_CONTENTS="usr/bin/*.exe"
