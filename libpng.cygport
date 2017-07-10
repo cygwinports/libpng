@@ -1,6 +1,6 @@
 NAME="libpng"
 VERSION=1.6.30
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="PNG library"
 DESCRIPTION="libpng is the official reference library for the Portable Network
